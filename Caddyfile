@@ -1,6 +1,6 @@
 {
     on_demand_tls {
-        ask https://app.sigle.io/caddy-endpoint
+        ask https://app.sigle.io/api/caddy-endpoint
     }
 
     # TODO find a way for persistent storage
