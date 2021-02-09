@@ -8,10 +8,20 @@
 }
 
 :80 {
+    log {
+       level ERROR
+       output stderr
+    }
+
     respond /health "Im healthy!" 200
 }
 
 :443 {
+    log {
+       level ERROR
+       output stderr
+    }
+
     tls sigle@protonmail.com {
         on_demand
     }
